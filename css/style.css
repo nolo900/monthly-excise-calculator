@@ -1,0 +1,10 @@
+body{
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.date-form { margin: 10px; }
+label.control-label span { cursor: pointer; }
+
+* {
+  border-radius: 0 !important;
+}
