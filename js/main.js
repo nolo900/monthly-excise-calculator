@@ -92,7 +92,7 @@ function calculatePenalty(){
 function calculateInterest(){
 	var monthCutoff = Date.parse($("#reportMonth").val()); 
 	var monthsLate = monthDiff(monthCutoff,Date.parse($("#todayDate").val()));
-	var interestPerMonth = 0.01 * (parseFloat($("#taxDue").val()) + parseFloat($("#penalty").val()));
+	var interestPerMonth = 0.00542 * (parseFloat($("#taxDue").val()) + parseFloat($("#penalty").val()));
 	var val = monthsLate * interestPerMonth;
 	
 	$("#interest").val(accounting.toFixed(val,2)); 
