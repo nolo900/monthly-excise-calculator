@@ -15,7 +15,7 @@ $('.input-group.date').datepicker({
 
 
 function writeTodaysDate(){
-		$("#todayDate").val(new Date.today().toString("d-MMM-yyyy"));
+		$("#todayDate").val(moment().format("d-MMM-YYYY"));
 	}
 
 
